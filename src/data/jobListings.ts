@@ -8,50 +8,14 @@ export interface JobListing {
   applyUrl: string;
 }
 
-// Categorize role titles into departments
-// Customize this function for your company's department structure
-function getDepartment(title: string): string {
-  const t = title.toLowerCase();
-  if (t.includes("engineer") || t.includes("developer")) return "Engineering";
-  if (t.includes("designer") || t.includes("ux")) return "Design";
-  if (t.includes("manager") || t.includes("director")) return "Management";
-  if (t.includes("sales") || t.includes("account")) return "Sales";
-  if (t.includes("marketing")) return "Marketing";
-  if (t.includes("support") || t.includes("success")) return "Customer Success";
-  return "General";
-}
-
-function getRegion(state: string): string {
-  const west = ["California", "Colorado", "Washington", "Oregon"];
-  const south = ["Texas", "Georgia", "Virginia", "Florida"];
-  const northeast = ["Massachusetts", "Pennsylvania", "Maryland", "New York"];
-  const midwest = ["Minnesota", "Missouri", "Michigan", "Illinois"];
-  if (west.includes(state)) return "West";
-  if (south.includes(state)) return "South";
-  if (northeast.includes(state)) return "Northeast";
-  if (midwest.includes(state)) return "Midwest";
-  return "Other";
-}
-
-/**
- * Populate this array with your job listings.
- *
- * Example:
- * {
- *   id: "job-001",
- *   title: "Software Engineer",
- *   city: "San Francisco",
- *   state: "California",
- *   applyUrl: "https://your-ats.com/apply/job-001",
- * }
- */
 export const jobListings: JobListing[] = [
-  // Add your job listings here
-].map((job: Omit<JobListing, "department" | "region"> & { department?: string; region?: string }) => ({
-  ...job,
-  department: job.department || getDepartment(job.title),
-  region: job.region || getRegion(job.state),
-}));
+  { id: "unc-001", title: "CDL A Distribution Driver", department: "Operations", city: "Buffalo", state: "New York", region: "Northeast", applyUrl: "https://recruiting.ultipro.com/UPS1000UPNC/JobBoard/8278ab32-7638-486b-a889-8265d76f85da/OpportunityDetail?opportunityId=4ee1a8c5-18d3-49e1-add9-d63ed1231609" },
+  { id: "unc-002", title: "Maintenance Supervisor", department: "Maintenance", city: "North Lawrence", state: "New York", region: "Northeast", applyUrl: "https://recruiting.ultipro.com/UPS1000UPNC/JobBoard/8278ab32-7638-486b-a889-8265d76f85da/OpportunityDetail?opportunityId=e76960c8-8cc5-439b-8453-6d8a1651db8c" },
+  { id: "unc-003", title: "Plant Manager", department: "Management", city: "West Seneca", state: "New York", region: "Northeast", applyUrl: "https://recruiting.ultipro.com/UPS1000UPNC/JobBoard/8278ab32-7638-486b-a889-8265d76f85da/OpportunityDetail?opportunityId=184b3ec7-a0f9-4cdc-bf95-a133970feb30" },
+  { id: "unc-004", title: "Sr. Manager, Learning and Development", department: "Human Resources", city: "Batavia", state: "New York", region: "Northeast", applyUrl: "https://recruiting.ultipro.com/UPS1000UPNC/JobBoard/8278ab32-7638-486b-a889-8265d76f85da/OpportunityDetail?opportunityId=0e394814-14fc-4ddd-bac1-967dadf0b774" },
+  { id: "unc-005", title: "Sales Operations Manager", department: "Sales", city: "Lancaster", state: "New York", region: "Northeast", applyUrl: "https://recruiting.ultipro.com/UPS1000UPNC/JobBoard/8278ab32-7638-486b-a889-8265d76f85da/OpportunityDetail?opportunityId=64511d3f-6bdd-4eee-99ec-24fdd7aab2db" },
+  { id: "unc-006", title: "QA Line Coordinator", department: "Quality", city: "Batavia", state: "New York", region: "Northeast", applyUrl: "https://recruiting.ultipro.com/UPS1000UPNC/JobBoard/8278ab32-7638-486b-a889-8265d76f85da/OpportunityDetail?opportunityId=1de8adf9-af89-4032-8f22-55da6cc285c5" },
+];
 
 export function getUniqueStates(): string[] {
   return [...new Set(jobListings.map((j) => j.state))].sort();

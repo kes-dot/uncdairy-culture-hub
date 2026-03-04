@@ -138,44 +138,44 @@ export interface CareerPerk {
 export const brandConfig = {
   // ── Company ──────────────────────────────────────────────
   company: {
-    name: "Your Company",
-    shortName: "YC",
-    tagline: "Where You Belong",
+    name: "UNC Dairy",
+    shortName: "UNC",
+    tagline: "Milk Is Our Life's Work",
     description:
-      "We're on a mission to build a workplace people love — driven by purpose, culture, and growth.",
-    founderName: "Jane Doe",
-    founderTitle: "Founder & CEO",
-    founderCredentials: "",
+      "America's premier farmer-owned dairy cooperative. From 200+ family farms across upstate New York and Pennsylvania, we nourish life every day.",
+    founderName: "Kevin Ellis",
+    founderTitle: "Chief Executive Officer",
+    founderCredentials: "Cornell Animal Science | MBA, University of Rochester",
     founderQuote:
-      "We believe in empowering our team to do their best work every single day.",
+      "Upstate Niagara is where excellence thrives and community matters. Our cooperative is committed to creating a rewarding, supportive work environment that embodies our life-nourishing philosophy.",
     founderMessage: [
-      "I'm personally dedicated to building an organization where every team member feels valued, supported, and inspired to grow.",
-      "Our team creates real impact every day. We invest in people, celebrate wins, and never stop improving.",
-      "Thank you for the important work you do and the difference you make every single day.",
+      "As a farmer-owned cooperative, everything we do honors the tireless effort and care our farming families put in every day, all day, 365 days a year.",
+      "Our farmer-owners think in generations — some of our farms have been run by the same families for over a century. That same generational thinking guides how we invest in our people.",
+      "Thank you for the important work you do and the difference you make in nourishing life every single day.",
     ],
-    address: "123 Main Street, Suite 100, Anytown, US 00000",
-    mainWebsiteUrl: "#",
-    copyrightHolder: "Your Company",
+    address: "6230 Aurora Expressway, Batavia, NY 14020",
+    mainWebsiteUrl: "https://uncdairy.com",
+    copyrightHolder: "UNC Dairy",
   },
 
   // ── Assets (replace these imports with your brand assets) ─
   assets: {
-    logoColor: "/placeholder.svg",
-    logoWhite: "/placeholder.svg",
-    heroImage: "/placeholder.svg",
-    teamImage: "/placeholder.svg",
-    founderImage: "/placeholder.svg",
+    logoColor: "/logo.svg",
+    logoWhite: "/logo.svg",
+    heroImage: "/hero-bg.jpg",
+    teamImage: "/hero-bg.jpg",
+    founderImage: "",
     /** Used as the featured bulletin image */
-    bulletinFeaturedImage: "/placeholder.svg",
+    bulletinFeaturedImage: "/hero-bg.jpg",
   },
 
   // ── SEO ──────────────────────────────────────────────────
   seo: {
-    pageTitle: "Life at Your Company | Culture & Values Hub",
+    pageTitle: "Life at UNC Dairy | Culture & Values Hub",
     metaDescription:
-      "Discover the culture, values, and career opportunities at Your Company. Join a team driven by purpose and growth.",
-    ogImage: "/placeholder.svg",
-    favicon: "/favicon.ico",
+      "Discover the culture, values, and career opportunities at UNC Dairy — one of America's largest farmer-owned dairy cooperatives.",
+    ogImage: "/logo.png",
+    favicon: "/favicon.png",
   },
 
   // ── Navigation ───────────────────────────────────────────
@@ -193,12 +193,12 @@ export const brandConfig = {
 
   // ── Hero ─────────────────────────────────────────────────
   hero: {
-    headline: "This Is Where",
-    highlightedWord: "You Belong.",
+    headline: "Where Dairy Is",
+    highlightedWord: "Life's Work.",
     subheadline:
-      "Discover the culture, people, and purpose that make us more than a workplace — it's a community.",
-    primaryCta: "Meet Our Culture",
-    secondaryCta: "View Open Roles",
+      "Join one of America's largest farmer-owned dairy cooperatives. 200+ farms. 7 plants. One mission: nourish life.",
+    primaryCta: "View Open Roles",
+    secondaryCta: "Our Culture",
   },
 
   // ── Values ───────────────────────────────────────────────
@@ -210,55 +210,55 @@ export const brandConfig = {
     items: [
       {
         icon: Award,
-        title: "Excellence & Quality",
+        title: "Excellence",
         description:
-          "Data-driven work, measurable outcomes, and a relentless commitment to doing things right.",
-        highlights: ["Best Practices", "Continuous Improvement", "Measurable Outcomes"],
+          "Strive for excellence in everything you do — from farm to plant to table.",
+        highlights: ["Award-Winning Products", "Continuous Improvement", "High Standards"],
         color: "primary",
       },
       {
-        icon: Heart,
-        title: "Inclusion & Diversity",
+        icon: Scale,
+        title: "Integrity",
         description:
-          "A safe, welcoming environment where diverse people thrive together.",
-        highlights: ["Cultural Competency", "Safe Spaces", "Diverse Community"],
+          "Act with utmost integrity to safeguard our hard-earned reputation and the trust of our farmer-owners.",
+        highlights: ["Farmer Trust", "Transparency", "Accountability"],
         color: "secondary",
-      },
-      {
-        icon: BookOpen,
-        title: "Learning & Development",
-        description:
-          "Extensive training, mentorship programs, and clear career pathways.",
-        highlights: ["Training", "Mentorship", "Career Pathways"],
-        color: "primary",
       },
       {
         icon: Users,
         title: "Collaboration",
         description:
-          "A team-oriented approach where people share wins and grow together.",
-        highlights: ["Cross-functional Teams", "Partnership", "Shared Success"],
-        color: "secondary",
-      },
-      {
-        icon: Scale,
-        title: "Work-Life Balance",
-        description:
-          "Flexible scheduling, social events, and genuine care for your wellness.",
-        highlights: ["Flexible Schedules", "Wellness Focus", "Recognition"],
+          "Collaborate with others to gain synergies and share best practices across our cooperative.",
+        highlights: ["Cross-Plant Teamwork", "Best Practices", "Shared Success"],
         color: "primary",
       },
       {
         icon: Sparkles,
-        title: "Community & Celebration",
+        title: "Making a Difference",
         description:
-          "We celebrate each other — milestones, achievements, and the daily moments that matter.",
-        highlights: ["Team Events", "Celebrations", "Connection"],
+          "Commit to making a positive difference, however large or small, every single day.",
+        highlights: ["Community Impact", "Daily Contribution", "Purpose-Driven"],
+        color: "secondary",
+      },
+      {
+        icon: Shield,
+        title: "Safety",
+        description:
+          "Ensure a safe environment for all team members while providing high-quality dairy foods and beverages.",
+        highlights: ["Team Safety", "Food Quality", "Zero Incidents"],
+        color: "primary",
+      },
+      {
+        icon: Trophy,
+        title: "Accountability",
+        description:
+          "Assume full accountability and be responsible with the resources entrusted to you by our farming families.",
+        highlights: ["Stewardship", "Ownership Mindset", "Responsible Growth"],
         color: "secondary",
       },
     ] as ValueItem[],
     quote:
-      "We don't just hire employees. We welcome family. We celebrate people. We grow together.",
+      "We don't just process milk. We honor a generational promise — to our farmers, our communities, and everyone who nourishes their family with our products.",
   },
 
   // ── Testimonials ─────────────────────────────────────────
@@ -269,27 +269,27 @@ export const brandConfig = {
     items: [
       {
         quote:
-          "The mentorship I received here transformed my career. I started at entry level and now I'm leading a team. The growth opportunities are truly unmatched.",
-        name: "Team Member A",
-        role: "Senior Lead",
-        years: "5 years",
-        initials: "TA",
+          "Upstate Niagara is where excellence thrives and community matters. Our cooperative is committed to creating a rewarding, supportive work environment that embodies our life-nourishing philosophy.",
+        name: "Kevin Ellis",
+        role: "Chief Executive Officer",
+        years: "Since 2022",
+        initials: "KE",
       },
       {
         quote:
-          "What sets this company apart is how genuinely they invest in your development. Every day I'm learning something that makes me better at what I do.",
-        name: "Team Member B",
-        role: "Specialist",
+          "Join a team that nourishes life from farm to table! As employees of a farmer-owned cooperative, we come to work every day trying to honor the tireless effort and care these farming families put in every day.",
+        name: "Team Member",
+        role: "Plant Operations",
         years: "3 years",
-        initials: "TB",
+        initials: "TM",
       },
       {
         quote:
-          "I've never worked somewhere that celebrates its team the way we do. From bulletin shoutouts to community events, you truly feel like you belong.",
-        name: "Team Member C",
-        role: "Senior Specialist",
-        years: "4 years",
-        initials: "TC",
+          "I've never felt more connected to where my work goes. Knowing our products end up on family tables across the region — that gives everything we do real meaning.",
+        name: "Team Member",
+        role: "Quality Assurance",
+        years: "5 years",
+        initials: "TM",
       },
     ] as Testimonial[],
   },
@@ -303,61 +303,59 @@ export const brandConfig = {
       "From day one, you're supported with competitive pay, comprehensive benefits, and real opportunities to grow.",
     categories: [
       {
-        title: "Benefits for All Employees",
+        title: "Health & Wellness",
         icon: Heart,
         color: "text-secondary",
         benefits: [
-          "Competitive pay",
-          "Initial and ongoing paid training",
-          "Opportunities for career advancement",
-          "Performance and promotion raises",
-          "Paid mileage and drive time",
-          "Paid professional liability insurance",
+          "Best-in-class health benefits",
+          "Employer-paid dental plan",
+          "Employer-paid life insurance",
+          "Health Reimbursement Account (HRA)",
+          "Flexible Spending Account (FSA)",
         ],
       },
       {
-        title: "Company Perks",
-        icon: Gift,
+        title: "Financial",
+        icon: DollarSign,
         color: "text-primary",
         benefits: [
-          "Employee Referral Program with generous bonuses",
-          "Wellness and discount programs",
-          "Company socials and team events",
-          "Employee Assistance Program",
+          "Competitive pay",
+          "401(k) retirement savings plan",
+          "Performance and promotion raises",
+          "Credit union membership",
         ],
       },
       {
-        title: "Full-Time Benefits",
-        icon: Shield,
+        title: "Time Off & Balance",
+        icon: Gift,
         color: "text-secondary",
         benefits: [
-          "Medical, dental, and vision insurance",
-          "401k Plan with company match",
-          "Paid Personal Time Off and Sick Leave",
-          "Paid Holidays",
+          "PTO and vacation packages",
+          "Paid holidays",
+          "Flexible scheduling where available",
         ],
       },
       {
-        title: "Growth & Education",
+        title: "Growth & Community",
         icon: GraduationCap,
         color: "text-primary",
         benefits: [
-          "Mentorship opportunities",
-          "Tuition reduction at partner programs",
-          "Professional development stipend",
-          "Paid conference attendance",
+          "Opportunities for advancement",
+          "Initial and ongoing paid training",
+          "Employee Referral Program",
+          "Community involvement initiatives",
         ],
       },
     ] as BenefitCategory[],
     highlights: [
-      { icon: DollarSign, label: "Competitive Pay", desc: "Market-rate compensation" },
-      { icon: Car, label: "Paid Mileage", desc: "Drive time covered" },
-      { icon: Users, label: "Team Socials", desc: "Events & gatherings" },
-      { icon: Briefcase, label: "Career Growth", desc: "Clear advancement paths" },
+      { icon: Heart, label: "Health Coverage", desc: "Employer-paid dental + life" },
+      { icon: DollarSign, label: "401(k) Plan", desc: "Retirement savings" },
+      { icon: Users, label: "Cooperative Culture", desc: "Farmer-owned, people-first" },
+      { icon: TrendingUp, label: "Career Growth", desc: "Advancement from within" },
     ] as BenefitHighlight[],
     testimonialQuote:
-      "Fantastic benefits and perks, competitive salary, and a team atmosphere.",
-    testimonialAttribution: "— Team Member",
+      "Our people are the backbone of everything we make. We invest in them like our farmers invest in their land — for the long haul.",
+    testimonialAttribution: "— Kevin Ellis, CEO",
   },
 
   // ── Career Pathways ──────────────────────────────────────
@@ -408,27 +406,27 @@ export const brandConfig = {
     items: [
       {
         icon: Trophy,
-        number: "10+",
-        label: "Years in Business",
-        description: "Building careers and making an impact since day one",
+        number: "200+",
+        label: "Farmer-Owner Families",
+        description: "Multi-generational farms across upstate NY and PA",
       },
       {
         icon: MapPin,
-        number: "10+",
-        label: "Locations",
-        description: "A growing footprint where you can grow close to home",
+        number: "7",
+        label: "Manufacturing Plants",
+        description: "Strategically located across New York and Pennsylvania",
       },
       {
         icon: FlaskConical,
-        number: "500+",
-        label: "Clients Served",
-        description: "The impact our team creates every single day",
+        number: "48+",
+        label: "Open Positions",
+        description: "Across operations, quality, logistics, and leadership",
       },
       {
         icon: TrendingUp,
-        number: "200+",
-        label: "Team Members & Growing",
-        description: "Professionals across every function — and still growing",
+        number: "$250M",
+        label: "West Seneca Expansion",
+        description: "Active investment in our future and our people",
       },
     ] as Milestone[],
   },
@@ -456,28 +454,28 @@ export const brandConfig = {
     featuredLinkUrl: "/bulletin/latest",
     items: [
       {
-        icon: Heart,
-        category: "Wellness",
-        title: "Take Care of Yourself",
+        icon: Trophy,
+        category: "Award",
+        title: "4 Awards at 2025 World Dairy Expo",
         description:
-          "Remember: progress over perfection. Stay connected with your team and reach out when you need support.",
+          "UNC Dairy took home multiple first and second place honors — a testament to our team's commitment to excellence.",
+        color: "primary",
+      },
+      {
+        icon: Rocket,
+        category: "Growth",
+        title: "$250M West Seneca Expansion Underway",
+        description:
+          "Major investment in our West Seneca plant signals our commitment to our farmers, our products, and our people.",
         color: "secondary",
       },
       {
         icon: Star,
-        category: "Recognition",
-        title: "Celebrating Our Team",
+        category: "Rebrand",
+        title: "Introducing UNC Dairy — Same Mission, Bolder Name",
         description:
-          "Shoutout to the incredible people who go above and beyond every day. Your dedication inspires us all.",
+          "In April 2025, Upstate Niagara Cooperative became UNC Dairy. Same farmer-owned roots. Fresh, unified identity.",
         color: "primary",
-      },
-      {
-        icon: Award,
-        category: "Spotlight",
-        title: "Team Member of the Month",
-        description:
-          "Congratulations to our amazing team members who went above and beyond this month.",
-        color: "secondary",
       },
     ] as BulletinItem[],
     newsletterArchive: [] as NewsletterArchiveItem[],
@@ -492,58 +490,52 @@ export const brandConfig = {
       "Every step has been guided by one purpose: making a meaningful difference through our work.",
     founderSectionBadge: "A Message from Our Founder",
     founderHeadline:
-      "We believe in empowering our team to do their best work every single day.",
+      "Upstate Niagara is where excellence thrives and community matters. Our cooperative is committed to creating a rewarding, supportive work environment that embodies our life-nourishing philosophy.",
     videoBadge: "Watch",
     videoHeading: "Our Guiding Principles",
     videoSubheading: "Our founder shares the vision behind the company",
     /** Set to a YouTube embed ID, or empty string to hide the video section */
     videoEmbedId: "",
     timelineBadge: "Our History",
-    timelineHeading: "A Decade of Growth",
+    timelineHeading: "Our Cooperative Journey",
     timelineSubheading:
-      "From a small team to a thriving organization serving communities nationwide.",
+      "Built by farming families, strengthened by our people, and focused on nourishing life for generations to come.",
     events: [
       {
-        year: "2015",
-        title: "Company Founded",
+        year: "Founded",
+        title: "Cooperative Roots",
         description:
-          "Started with a singular mission: deliver exceptional service rooted in expertise and compassion.",
+          "Upstate Niagara Cooperative founded by local dairy farming families committed to collective ownership and sustainable dairy.",
         icon: Rocket,
         highlight: true,
       },
       {
-        year: "2017",
-        title: "First Expansion",
+        year: "Expansion",
+        title: "7 Plants, 200+ Farms",
         description:
-          "Expanded into new markets, bringing our services to more communities.",
+          "Expanded to 7 manufacturing plants across NY and PA, supported by 200+ farmer-owner families.",
         icon: MapPin,
       },
       {
-        year: "2019",
-        title: "Team Milestone",
-        description: "Grew the team to over 100 dedicated professionals.",
-        icon: Users,
-      },
-      {
-        year: "2021",
-        title: "Technology Launch",
+        year: "Brands",
+        title: "Building a Family of Brands",
         description:
-          "Launched proprietary technology to drive better outcomes and operational efficiency.",
-        icon: FlaskConical,
+          "Launched Upstate Farms, Bison, O-AT-KA, and more — reaching consumers across retail and foodservice.",
+        icon: Globe,
         highlight: true,
       },
       {
-        year: "2023",
-        title: "National Footprint",
+        year: "2022",
+        title: "New Leadership",
         description:
-          "Reached multiple locations across the country with diverse service settings.",
-        icon: Globe,
+          "Kevin Ellis named CEO, bringing deep cooperative and dairy industry expertise to lead the next chapter.",
+        icon: Users,
       },
       {
         year: "2025",
-        title: "Continued Growth",
+        title: "UNC Dairy — Reborn Bold",
         description:
-          "A growing team of dedicated professionals — and still expanding. The best is yet to come.",
+          "Rebranded to UNC Dairy with a $250M expansion investment. The next generation of farmer-owned dairy starts here.",
         icon: TrendingUp,
         highlight: true,
       },
@@ -552,17 +544,17 @@ export const brandConfig = {
 
   // ── Careers Page ─────────────────────────────────────────
   careers: {
-    heroHeading: "Join Our Team",
+    heroHeading: "Nourish Your Career Here",
     heroSubheading:
-      "We're looking for talented individuals who want to elevate their careers. Find where you belong.",
+      "Join one of America's most respected farmer-owned dairy cooperatives. Real work. Real impact. Real community.",
     perks: [
       { icon: GraduationCap, title: "Paid Training", desc: "Comprehensive onboarding program" },
       { icon: Users, title: "Mentorship", desc: "Grow alongside talented colleagues" },
       { icon: Heart, title: "Meaningful Impact", desc: "Help people reach their goals" },
       { icon: Building2, title: "Career Growth", desc: "Clear advancement pathways" },
     ] as CareerPerk[],
-    ctaHeading: "Want to learn more about life here?",
-    ctaSubheading: "Explore our culture, values, and team stories.",
+    ctaHeading: "Want to see the culture behind the co-op?",
+    ctaSubheading: "Explore our values, team stories, and what makes UNC Dairy different.",
     ctaLabel: "Explore Our Culture",
   },
 
@@ -602,15 +594,15 @@ export const brandConfig = {
   // ── Footer ───────────────────────────────────────────────
   footer: {
     description:
-      "Building careers, community, and futures — driven by purpose and heart.",
+      "Farmer-owned. Community-driven. Nourishing life from upstate New York to tables across America.",
     quickLinks: [
       { label: "Culture & Values", href: "/" },
       { label: "Our Journey", href: "/mission" },
       { label: "Open Roles", href: "/careers" },
     ] as NavLink[],
-    mainWebsiteLink: { label: "Main Website", url: "#" },
+    mainWebsiteLink: { label: "UNCDairy.com", url: "https://uncdairy.com" },
     connectHeading: "Connect",
     connectText:
-      "Ready to make a difference? We'd love to hear from you. Explore our open positions and find where you belong.",
+      "Ready to join a team that nourishes life every day? Explore 48+ open roles across our 7 plants.",
   },
 };
